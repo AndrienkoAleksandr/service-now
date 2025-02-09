@@ -39,9 +39,9 @@ spec:
       input:
         tableName: incident
         requestBody:
-          short_description: {{ parameters.short_description }}
-          description: {{ parameters.description }}
-          severity: {{ parameters.severity }}
+          short_description: {{ parameters.requestBody.short_description }}
+          description: {{ parameters.requestBody.description }}
+          severity: {{ parameters.requestBody.severity }}
   output:
     incidentId: ${{ steps.createRecord.output.id }}
     text:
