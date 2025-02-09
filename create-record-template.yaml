@@ -43,4 +43,4 @@ spec:
           description: {{ parameters.description }}
           severity: {{ parameters.severity }}
   output:
-    text: "Incident record created successfully."
+    - text: "Incident record created successfully."
