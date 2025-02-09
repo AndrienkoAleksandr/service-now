@@ -43,4 +43,6 @@ spec:
           description: {{ parameters.description }}
           severity: {{ parameters.severity }}
   output:
-    - text: "Incident record created successfully."
+    incidentId: ${{ steps.createRecord.output.id }}
+    text:
+      - title: "Incident record created successfully."
