@@ -35,7 +35,7 @@ spec:
   steps:
     - id: createRecord
       name: Create Record
-      action: scaffolder-backend-servicenow:createRecord
+      action: servicenow:now:table:createRecord
       input:
         tableName: incident
         requestBody:
