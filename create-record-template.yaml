@@ -5,6 +5,7 @@ metadata:
   title: Create Incident Record
   description: Create a record in the incident table
 spec:
+  type: service
   owner: user:default/admin
   parameters:
     - title: Incident Details
